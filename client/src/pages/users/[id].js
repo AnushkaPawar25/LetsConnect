@@ -33,7 +33,7 @@ export default function Profile() {
     const userid = router.query.id;
     axios
       .get(
-        `https://socialnetwork-api-r5ve.onrender.com/api/users/${userid}`,
+        `http://localhost:4000/api/users/${userid}`,
         config
       )
       .then((res) => {
@@ -45,7 +45,7 @@ export default function Profile() {
       .catch(console.log);
     axios
       .get(
-        `https://socialnetwork-api-r5ve.onrender.com/api/users/${userid}/friends`,
+        `http://localhost:4000/api/users/${userid}/friends`,
         config
       )
       .then((res) => {
@@ -54,7 +54,7 @@ export default function Profile() {
       .catch(console.log);
     axios
       .get(
-        `https://socialnetwork-api-r5ve.onrender.com/api/users/${userid}/likedPosts`,
+        `http://localhost:4000/api/users/${userid}/likedPosts`,
         config
       )
       .then((res) => {
@@ -64,7 +64,7 @@ export default function Profile() {
     if (sameUser) {
       axios
         .get(
-          `https://socialnetwork-api-r5ve.onrender.com/api/users/${userid}/requests`,
+          `http://localhost:4000/api/users/${userid}/requests`,
           config
         )
         .then((res) => {
@@ -73,7 +73,7 @@ export default function Profile() {
         .catch(console.log);
       axios
         .get(
-          `https://socialnetwork-api-r5ve.onrender.com/api/users/${userid}/sentRequests`,
+          `http://localhost:4000/api/users/${userid}/sentRequests`,
           config
         )
         .then((res) => {
@@ -96,7 +96,7 @@ export default function Profile() {
       };
       axios
         .patch(
-          `https://socialnetwork-api-r5ve.onrender.com/api/users/${router.query.id}/deletePhoto`,
+          `http://localhost:4000/api/users/${router.query.id}/deletePhoto`,
           undefined,
           config
         )
