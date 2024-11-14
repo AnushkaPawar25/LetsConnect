@@ -1,0 +1,130 @@
+.profile{
+   min-height: 100vh;
+    background-color:#fff ;
+    position: relative;
+}
+.focus-check {
+    position: fixed;
+    font-family: "Helvetica" sans-serif;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -200px;
+
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+.cover{
+    height: 150px;
+    max-height: 30vh;
+    border-bottom: 1px solid teal;
+}
+.cover-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.profile-icons{
+    margin-top: 40px;
+}
+.info{
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 20px 10px 20px;
+}
+.profile-img{
+    display: flex;
+}
+.profile-img :global(.icon){
+    padding-top:20px ;
+    position: relative;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.profile-img>img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.friends-profiles :global(.icon) img{
+   margin-left: -3px;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.user-info h2{
+    font-size: 2rem;
+}
+.actions{
+    display: flex;
+    gap: 10px;
+}
+.actions{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.actions button{
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    background-color: #0c4a6e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+.tabs {
+    margin:5px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    background-color: rgba(50, 50, 50, .8);
+}
+
+.tabs>button {
+    padding: 5px 5px;
+    border: none;
+    border-right: 2px solid teal;
+    font-size: 1rem;
+    transition: 0.1s;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    height: 60px;
+}
+
+.tabs>button:hover {
+    color: #06b6d4;
+    border-bottom: 5px solid teal;
+}
+.posts{
+    margin-right:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.friends{
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-auto-rows: 1fr;
+}

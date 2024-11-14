@@ -1,0 +1,117 @@
+.main{
+    height: 100vh;
+    background: url('/images/loginpage.jpeg') no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 20px 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.main>div{
+    border-radius: 8px;
+}
+.text-box{
+    height: 200px;
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    text-align: center;
+}
+.text-box h1{
+    font-weight: 900;
+    color: #6b21a8;
+    font-size: 3rem;
+}
+.text-box p{
+    font-size: 1.4rem;
+}
+.form-container{
+    min-height: 50%;
+    max-height: 500px;
+    width: 90%;
+    max-width: 400px;
+    background-color:#f8fafc;
+    box-shadow: 0px 0px 10px 5px #9ca3af;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-container form{
+    padding: 10px;
+     height: 90%;
+    
+    border-bottom: 0.5px solid black;
+    display: grid;
+    grid-template-rows: 80px 80px 1fr ;
+    gap: 10px;
+}
+.new-account,.form-btn{
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+}
+.new-account{
+    
+    width: 80%;
+    align-self: center;
+    font-size: 1.3rem;
+    background-color: #6b21a8;
+
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+    font-weight: lighter;
+}
+.form-item label{
+    font-size: 1.3rem;
+}
+.form-item input{
+    width: 100%;
+    border:none;
+    border-bottom: 2px solid teal;
+    background:transparent;
+    color: #334155;
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+.form-item input:focus{
+    outline: none;
+    border-bottom: 4px solid blue;
+}
+
+.form-item input::placeholder{
+    font-size: 1.2rem;
+}
+.form-btn{
+    font-size: 1.5rem;
+    width: 70%;
+    justify-self: center;
+    align-self: self-start;
+    background-color: #115e59;
+}
+.form-container p.error{
+    text-align: center;
+}
+@media (min-width:800px){
+    .main{
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-size: cover;
+    }
+ 
+    .form-container form{
+        height: 100%;
+        padding-bottom:25px;
+    }
+    .form-btn{
+        align-self: center;
+    }
+}

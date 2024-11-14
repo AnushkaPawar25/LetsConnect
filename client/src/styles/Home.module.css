@@ -1,0 +1,27 @@
+.main{
+  background-color: #e2e8f0;
+  position: relative;
+}
+.main :first-child{
+  position: static;
+  z-index: 1;
+}
+
+.focus-check{
+  position: fixed;
+  font-family: "Helvetica" sans-serif;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -200px;
+
+    border-radius: 8px;
+    display: flex;
+      justify-content: center;
+      z-index: 3;
+}
+
+
+
